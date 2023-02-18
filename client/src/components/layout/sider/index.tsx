@@ -204,7 +204,8 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 primaryTypographyProps={{
                   noWrap: true,
                   fontSize: "16px",
-                  fontWeight: isSelected ? "#FFF" : "#808191",
+                  fontWeight: isSelected ? "bold" : "normal",
+                  color: isSelected ? "#FFF" : "#808191",
                   marginLeft: '10px'
                 }}
               />

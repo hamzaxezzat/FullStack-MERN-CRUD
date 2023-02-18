@@ -28,6 +28,8 @@ import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
 import { OffLayoutArea } from "components/offLayoutArea";
 import { Login, Home, Agents, MyProfile, PropertyDetails, AllProperties, CreateProperty, AgentProfile, EditProperty } from "pages";
+import allProperties from "pages/all-properties";
+import myProfile from "pages/my-profile";
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -109,28 +111,32 @@ function App() {
             resources={[
               {
                 name: "property",
-                list : MuiInferencer,
+                list : allProperties,
+                show :PropertyDetails,
+                create: CreateProperty,
+                edit: EditProperty,
                 icon: <VillaOutlined />
               },
               {
                 name: "agent",
-                list : MuiInferencer,
+                list : Agents,
+                show: AgentProfile,
                 icon: <VillaOutlined /> 
               },
               {
                 name: "review",
-                list : MuiInferencer,
+                list : Home,
                 icon: <StarOutlineRounded /> 
               },
               {
-                name: "messge",
-                list : MuiInferencer,
+                name: "message",
+                list : Home,
                 icon: <ChairAltOutlined /> 
               },
               {
                 name: "my-profile",
                 options:{label:'My Profile'},
-                list : MuiInferencer,
+                list : myProfile ,
                 icon: <AccountCircleOutlined /> 
               },
             ]}
