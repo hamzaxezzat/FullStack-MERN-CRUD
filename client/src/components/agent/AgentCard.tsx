@@ -6,4 +6,4 @@ const AgentCard = () => {
   )
 }
 
-export default AgentCard
+export default AgentCard 
