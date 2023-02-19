@@ -17,6 +17,7 @@ import {
   StarOutlineRounded,
   VillaOutlined,
 } from '@mui/icons-material'
+
 import dataProvider from "@pankod/refine-simple-rest";
 import { MuiInferencer } from "@pankod/refine-inferencer/mui";
 import routerProvider from "@pankod/refine-react-router-v6";
@@ -52,7 +53,7 @@ function App() {
 
       if (profileObj) {
         const response = await fetch(
-            "http://localhost:8080/api/v1/users",
+            "http://localhost:8080/users",
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },

@@ -39,6 +39,7 @@ const AllProperties = () => {
 
     return {
       title: logicalFilters.find((item)=>item.field==='title')?.value || '',
+      propertyType: logicalFilters.find((item)=>item.field === 'propertyType')?.value || '',
     }
   },[filters])
 
@@ -95,10 +96,20 @@ const AllProperties = () => {
                 required
                 inputProps={{ "aria-label": "Without label" }}
                 defaultValue=""
-                value=""
-                onChange={()=>{}}
+                value={currentFilterValues.propertyType}
+                onChange={(e) => {
+                  setFilters([
+                    {
+                      field:'propertyType',
+                      operator:'eq',
+                      value: e.target.value
+                    }
+                  ],'replace')}}
               >
                 <MenuItem value="">All</MenuItem>
+                {['Apartment','Villa','Farmhouse','Condos','Townhouse','Duplex','Studio','Chalet'].map((type)=>(
+                  <MenuItem key={type} value={type.toLowerCase()} >{type}</MenuItem>
+                  ))}
               </Select>
             </Box>
           </Box>
@@ -155,7 +166,7 @@ const AllProperties = () => {
                 inputProps={{ "aria-label": "Without label" }}
                 defaultValue={10}
                 value=""
-                onChange={()=>{}}
+                onChange={(e)=> setPageSize(e.target.value ? Number(e.target.value) : 10) }
               >
                 {[10,20,30,40,50].map((size)=>(
                   <MenuItem value={size} key={size}>Show {size}</MenuItem>
