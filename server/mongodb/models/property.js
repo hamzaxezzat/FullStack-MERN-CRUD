@@ -1,13 +1,14 @@
 import mongoose from 'mongoose';
 
-const PropertySchema = new mongoose.Scheme({
+const PropertySchema = new mongoose.Schema({
     title: {type:String , required:true},
     description: {type:String , required:true},
     propertyType: {type:String , required:true},
     location: {type:String , required:true},
-    price: {type:number , required:true},
+    price: {type:Number , required:true},
     photo: {type:String , required:true},
-    creator: [{type:mongoose.Scheme.Types.ObjectId,ref:'User'}]
+    creator: {type:mongoose.Schema.Types.ObjectId,ref:"User"}
+            
     // creator: Every property belonge to user or creator
 })
 
