@@ -80,7 +80,15 @@ const createProperty = async(req,res)=>{
         res.status(500).json({message:error.message})
     }
 };
-const updateProperty = async(req,res)=>{};
+const updateProperty = async(req,res)=>{
+    try {
+        const {id} =req.params;
+        const {title,description,propertyType,location,price,photo} = req.body;
+    } catch (error) {
+        
+    }
+
+};
 const deleteProperty = async(req,res)=>{  
     try {  
         const {id} =req.params;
