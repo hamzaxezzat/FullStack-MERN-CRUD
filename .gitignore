@@ -3,3 +3,4 @@
 /client/env
 /server/env
 env
+.env
