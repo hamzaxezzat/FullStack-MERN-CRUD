@@ -7,6 +7,7 @@
   # Real Estate MERN
 
     Table of Contents:
+  - [Preview](#preview)
   
   - [Description](#description)
   
@@ -18,9 +19,13 @@
   
   - [License](#license)
   
-  
+
+## Preview Photo  
 ![Preview](https://github.com/hamzaxezzat/FullStack-MERN-CRUD/blob/main/client/public/main.jpeg)
   
+
+## Preview Video
+![Preview](https://github.com/hamzaxezzat/FullStack-MERN-CRUD/blob/main/client/public/Realestate-MERN-preview.mp4)
   
 Deployed with Heroku:
    
