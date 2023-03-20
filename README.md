@@ -5,7 +5,10 @@
 
 
   # Real Estate MERN
-
+  
+## Preview Photo  
+![Preview](https://github.com/hamzaxezzat/FullStack-MERN-CRUD/blob/main/client/public/main.jpeg)
+  
     Table of Contents:
   - [Preview](#preview)
   
@@ -20,9 +23,7 @@
   - [License](#license)
   
 
-## Preview Photo  
-![Preview](https://github.com/hamzaxezzat/FullStack-MERN-CRUD/blob/main/client/public/main.jpeg)
-  
+
 
 ## Preview Video
 https://user-images.githubusercontent.com/17389532/226326698-dca5af72-919f-453e-85b2-1e341c5dbd40.mp4
