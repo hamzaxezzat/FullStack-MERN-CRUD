@@ -25,7 +25,9 @@
   
 
 ## Preview Video
-![Preview](https://github.com/hamzaxezzat/FullStack-MERN-CRUD/blob/main/client/public/Realestate-MERN-preview.mp4)
+https://user-images.githubusercontent.com/17389532/226326698-dca5af72-919f-453e-85b2-1e341c5dbd40.mp4
+
+
   
 Deployed with Heroku:
    
